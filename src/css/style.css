@@ -1,4 +1,7 @@
-button[data-start] {
+button {
+  cursor: pointer;
+}
+.btn-container button[data-start] {
   background-color: green;
   font-weight: 500;
   font-size: 16px;
@@ -9,11 +12,9 @@ button[data-start] {
   height: 56px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-button[data-stop] {
+.btn-container button[data-stop] {
   background-color: red;
   font-weight: 500;
   font-size: 16px;
@@ -24,6 +25,37 @@ button[data-stop] {
   height: 56px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+}
+
+.field-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.field {
+  display: block;
+}
+
+.field span {
+  display: flex;
+  justify-content: center;
+}
+
+.field span:first-child {
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1;
 }
